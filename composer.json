@@ -1,5 +1,5 @@
 {
-    "name": "waavi/url-shortener",
+    "name": "mpallante/url-shortener",
     "description": "Url Shortener for Laravel 5 with support for Google and Bitly drivers.",
     "keywords": [
         "waavi",
