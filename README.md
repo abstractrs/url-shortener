@@ -1,15 +1,10 @@
 # Laravel 5 url shortener
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/waavi/url-shortener.svg?style=flat-square)](https://packagist.org/packages/waavi/url-shortener)
-[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
-[![Build Status](https://img.shields.io/travis/Waavi/url-shortener/master.svg?style=flat-square)](https://travis-ci.org/Waavi/url-shortener)
-[![Total Downloads](https://img.shields.io/packagist/dt/waavi/url-shortener.svg?style=flat-square)](https://packagist.org/packages/waavi/url-shortener)
+[![Total Downloads](https://img.shields.io/packagist/dt/waavi/url-shortener.svg?style=flat-square)](https://packagist.org/packages/djordjevicmladen/url-shortener)
 
 ## Introduction
 
 URL shortener package that gives a convenient Laravel Facade for [mremi/UrlShortener](https://github.com/mremi/UrlShortener)
-
-WAAVI is a web development studio based in Madrid, Spain. You can learn more about us at [waavi.com](http://waavi.com)
 
 ## Laravel compatibility
 
@@ -18,30 +13,31 @@ WAAVI is a web development studio based in Madrid, Spain. You can learn more abo
  5.1.x    | 1.0.x
  5.2.x    | 1.0.1 and higher
  5.5.x    | 1.0.7 and higher
+ 5.8.x    | 2.0 and higher
 
 ## Installation and Setup
 
 Require through composer
 
-    composer require waavi/url-shortener 1.0.x
+    composer require djordjevicmladen/url-shortener
 
 Or manually edit your composer.json file:
 
     "require": {
-        "waavi/url-shortener": "1.0.x"
+        djordjevicmladen/url-shortener": "^2.0"
     }
 
 In config/app.php, add the following entry to the end of the providers array:
 
-    Waavi\UrlShortener\UrlShortenerServiceProvider::class,
+    Abstractrs\UrlShortener\UrlShortenerServiceProvider::class,
 
 And the following alias:
 
-    'UrlShortener' => Waavi\UrlShortener\Facades\UrlShortener::class,
+    'UrlShortener' => Abstractrs\UrlShortener\Facades\UrlShortener::class,
 
 Publish the configuration file, the form view and the language entries:
 
-    php artisan vendor:publish --provider="Waavi\UrlShortener\UrlShortenerServiceProvider"
+    php artisan vendor:publish --provider="Abstractrs\UrlShortener\UrlShortenerServiceProvider"
 
 Check the config files for the environment variables you need to set for the selected driver.
 
