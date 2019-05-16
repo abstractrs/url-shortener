@@ -1,6 +1,6 @@
 <?php
 
-namespace Waavi\UrlShortener;
+namespace Abstractrs\UrlShortener;
 
 use Illuminate\Support\ServiceProvider;
 

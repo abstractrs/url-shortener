@@ -1,6 +1,6 @@
 <?php
 
-namespace Waavi\UrlShortener\Facades;
+namespace Abstractrs\UrlShortener\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

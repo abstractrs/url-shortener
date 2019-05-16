@@ -1,6 +1,6 @@
 <?php
 
-namespace Waavi\UrlShortener\Test;
+namespace Abstractrs\UrlShortener\Test;
 
 class FactoryTest extends TestCase
 {
@@ -11,7 +11,7 @@ class FactoryTest extends TestCase
     {
         $factory = $this->app['urlshortener.factory'];
         $driver  = $factory->make('google');
-        $this->assertInstanceOf(\Waavi\UrlShortener\Drivers\Google::class, $driver);
+        $this->assertInstanceOf(\Abstractrs\UrlShortener\Drivers\Google::class, $driver);
     }
 
     /**
@@ -21,7 +21,7 @@ class FactoryTest extends TestCase
     {
         $factory = $this->app['urlshortener.factory'];
         $driver  = $factory->make('bitly');
-        $this->assertInstanceOf(\Waavi\UrlShortener\Drivers\Bitly::class, $driver);
+        $this->assertInstanceOf(\Abstractrs\UrlShortener\Drivers\Bitly::class, $driver);
     }
 
     /**

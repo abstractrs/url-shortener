@@ -1,6 +1,6 @@
 <?php
 
-namespace Waavi\UrlShortener\Test;
+namespace Abstractrs\UrlShortener\Test;
 
 use Orchestra\Testbench\TestCase as Orchestra;
 
@@ -14,14 +14,14 @@ abstract class TestCase extends Orchestra
     protected function getPackageProviders($app)
     {
         return [
-            \Waavi\UrlShortener\UrlShortenerServiceProvider::class,
+            \Abstractrs\UrlShortener\UrlShortenerServiceProvider::class,
         ];
     }
 
     protected function getPackageAliases($app)
     {
         return [
-            'UrlShortener' => \Waavi\UrlShortener\Facades\UrlShortener::class,
+            'UrlShortener' => \Abstractrs\UrlShortener\Facades\UrlShortener::class,
         ];
     }
 

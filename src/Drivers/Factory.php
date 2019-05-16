@@ -1,6 +1,6 @@
 <?php
 
-namespace Waavi\UrlShortener\Drivers;
+namespace Abstractrs\UrlShortener\Drivers;
 
 use Illuminate\Config\Repository as Config;
 use InvalidArgumentException;

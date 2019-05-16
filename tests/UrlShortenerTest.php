@@ -1,11 +1,11 @@
 <?php
 
-namespace Waavi\UrlShortener\Test;
+namespace Abstractrs\UrlShortener\Test;
 
 use Mockery;
-use Waavi\UrlShortener\Drivers\BaseDriver;
-use Waavi\UrlShortener\Drivers\Factory;
-use Waavi\UrlShortener\UrlShortener;
+use Abstractrs\UrlShortener\Drivers\BaseDriver;
+use Abstractrs\UrlShortener\Drivers\Factory;
+use Abstractrs\UrlShortener\UrlShortener;
 
 class UrlShortenerTest extends TestCase
 {
@@ -53,7 +53,7 @@ class UrlShortenerTest extends TestCase
 
     /**
      *  @test
-     *  @expectedException \Waavi\UrlShortener\Exceptions\InvalidResponseException
+     *  @expectedException \Abstractrs\UrlShortener\Exceptions\InvalidResponseException
      */
     public function it_throws_invalid_response_exception_on_bad_response()
     {
@@ -69,7 +69,7 @@ class UrlShortenerTest extends TestCase
 
     /**
      *  @test
-     *  @expectedException \Waavi\UrlShortener\Exceptions\InvalidResponseException
+     *  @expectedException \Abstractrs\UrlShortener\Exceptions\InvalidResponseException
      */
     public function it_throws_invalid_response_exception_on_invalid_api_response()
     {

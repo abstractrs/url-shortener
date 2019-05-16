@@ -1,6 +1,6 @@
 <?php
 
-namespace Waavi\UrlShortener;
+namespace Abstractrs\UrlShortener;
 
 use GuzzleHttp\Exception\BadResponseException;
 use Mremi\UrlShortener\Exception\InvalidApiResponseException;
