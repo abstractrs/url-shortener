@@ -1,6 +1,6 @@
 # Laravel 5 url shortener
 
-[![Total Downloads](https://img.shields.io/packagist/dt/waavi/url-shortener.svg?style=flat-square)](https://packagist.org/packages/djordjevicmladen/url-shortener)
+[![Total Downloads](https://img.shields.io/packagist/dt/waavi/url-shortener.svg?style=flat-square)](https://packagist.org/packages/abstractrs/url-shortener)
 
 ## Introduction
 
@@ -19,12 +19,12 @@ URL shortener package that gives a convenient Laravel Facade for [mremi/UrlShort
 
 Require through composer
 
-    composer require djordjevicmladen/url-shortener
+    composer require abstractrs/url-shortener
 
 Or manually edit your composer.json file:
 
     "require": {
-        djordjevicmladen/url-shortener": "^2.0"
+        abstractrs/url-shortener": "^2.0"
     }
 
 In config/app.php, add the following entry to the end of the providers array:
